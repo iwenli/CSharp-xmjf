@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Web;
 using System.Net;
 using System.Text;
-using System.IO;
+using System.IO; 
 
 namespace main
 {
@@ -59,11 +59,11 @@ namespace main
         /// <param name="strReferer">引用地址</param> 
         /// <param name="code">网站编码</param> 
         /// <returns>可以返回页面内容或不返回</returns> 
-        public string PostData(string strURL, string strArgs, string strReferer, string code, string method)
+        public string SendData(string strURL, string strArgs, string strReferer, string code, string method)
         {
-            return PostData(strURL, strArgs, strReferer, code, method, string.Empty);
+            return SendData(strURL, strArgs, strReferer, code, method, string.Empty);
         }
-        public string PostData(string strURL, string strArgs, string strReferer, string code, string method, string contentType)
+        public string SendData(string strURL, string strArgs, string strReferer, string code, string method, string contentType)
         {
             try
             {
@@ -113,7 +113,7 @@ namespace main
 
                 if (myHttpWebRequest.CookieContainer != null)
                 {
-                    this.CookieHeader = myHttpWebRequest.CookieContainer.GetCookieHeader(new Uri(strURL)); 
+                    this.CookieHeader = myHttpWebRequest.CookieContainer.GetCookieHeader(new Uri(strURL));
                 }
 
                 sr = new System.IO.StreamReader(response.GetResponseStream(), Encoding.GetEncoding(code));

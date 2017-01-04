@@ -57,7 +57,7 @@ namespace main
                 default:
                     break;
             }
-            result = post.PostData(postUrl, strArgs, strReferer, "utf-8", "POST", "application/x-www-form-urlencoded; charset=UTF-8");
+            result = post.SendData(postUrl, strArgs, strReferer, "utf-8", "POST", "application/x-www-form-urlencoded; charset=UTF-8");
             context.Response.Write(result);
         }
 
