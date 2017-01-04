@@ -1,0 +1,133 @@
+@charset "utf-8";
+#user_c, #user_l, body, img {
+    margin: 0 auto
+}
+
+body {
+    padding: 0 auto;
+    font-family: "微软雅黑", Tahoma, Verdana, Arial;
+    font-size: 100%;
+    color: #333
+}
+
+a {
+    text-decoration: none
+}
+
+dd, dl, form, h1, h2, h3, h4, h5, h6, p, ul {
+    padding: 0;
+    margin: 0
+}
+
+ul {
+    list-style: none
+}
+
+img {
+    height: auto;
+    width: auto \9;
+    width: 100%
+}
+
+#main, #top, #userin {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto
+}
+
+#user_l {
+    float: left;
+    width: 20%;
+    height: 100%
+}
+
+#user_c {
+    float: left;
+    width: 5%;
+    height: 100%
+}
+
+#user_r {
+    float: left;
+    border: 1px solid #ebebeb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 70%;
+    height: 100%;
+    margin: 5px 0
+}
+
+#user_r_font {
+    float: left;
+    font-size: 16px;
+    padding: 5% 0 2% 2%
+}
+
+#table_st {
+    width: 100%;
+    height: 100%;
+    margin: 2% 0 0
+}
+
+.w_kuang {
+    border: 1px solid #818080;
+    padding: 10px;
+    margin: 0 auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 85%;
+    height: 100%
+}
+
+#pass_sty, #phone_sty {
+    padding: 3px 10px 10px
+}
+
+.w_kuang_code {
+    border: 1px solid #818080;
+    margin-left: 8%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    color: #a0a0a0;
+    font-size: 100%
+}
+
+#msgCode, #password, #phone {
+    border: none;
+    outline: 0;
+    font-size: 100%;
+    margin-left: 5px;
+    color: #a0a0a0
+}
+
+#phone_sty {
+    width: 100%;
+    background: url(https://www.xiongmaojinfu.com/static/pc/images/h5/5.png) no-repeat;
+    background-size: 100% 80%
+}
+
+#pass_sty {
+    width: 100%;
+    background: url(https://www.xiongmaojinfu.com/static/pc/images/h5/6.png) no-repeat;
+    background-size: 100% 80%
+}
+
+#password, #phone {
+    width: 70%;
+    height: 100%
+}
+
+#msgCode {
+    padding: 10px;
+    width: 80%;
+    height: 90%
+}
+
+.td_jianju {
+    padding: 3% 0
+}

@@ -1,0 +1,4 @@
+C:\Users\jsonZhang\Desktop\xmjf\server\main\main\bin\main.dll
+C:\Users\jsonZhang\Desktop\xmjf\server\main\main\bin\main.pdb
+C:\Users\jsonZhang\Desktop\xmjf\server\main\main\obj\Debug\main.dll
+C:\Users\jsonZhang\Desktop\xmjf\server\main\main\obj\Debug\main.pdb
