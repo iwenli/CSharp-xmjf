@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.xiongmaojinfu.com/auth/h5Register?mobile=&qsrc=xm-001-0430 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>账户总览_熊猫金服_合规、安全、省心，收益稳健的互联网金融理财平台</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./public/favicon.ico">
+<link rel="bookmark" href="./public/favicon.ico" type="image/x-icon" 　="">    
+<script type="text/javascript" src="./public/hm.js"></script>
+<script type="text/javascript" src="./public/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="./public/jquery-1.11.1.min.js"></script>
+    <link href="./public/register.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="main">
+    <div id="top">
+
+        <img src="./public/new_top.png">
+
+    </div>
+    <div id="userin">
+        <div id="user_l"><img src="./public/n_index_02.png"></div>
+        <div id="user_c"><img src="./public/n_index_03.png"></div>
+        <div id="user_r">
+            <div id="user_r_font">
+
+                <div style="font-weight: bold;font-size:15px;" id="shareName">
+                    我是
+                                            熊猫金服
+                                    </div>
+                <div style="font-size: 13px;margin-top:5%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;给你推荐最近很火的熊猫金服，送你800元现金红包，注册即得，首投享年化10%高息，注册玩玩吧！</div>
+                <!--                我在熊猫金服等您<br>-->
+                <!--                <span style="color:#ff6600;">分享此页面邀请好友来领红包吧！</span>-->
+            </div>
+
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="table_st">
+        <div id="display_input"></div><table width="90%" style="width:90%;margin:0 auto;">
+
+            
+            <tbody><tr>
+                <td colspan="2" width="100%" class="td_jianju">
+                    <div class="w_kuang">
+                        <span id="phone_sty"></span>
+                        <input id="phone" type="number" name="phone" placeholder="请输入手机号码">
+                    </div>
+                    <!-- <input class="phone_sty" id="phone" name="phone" type="number" placeholder="请输入手机号码">-->
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" class="td_jianju">
+                    <div class="w_kuang_code">
+                        <input id="msgCode" name="msgCode" type="text" style="" placeholder="请输入验证码">
+                    </div>
+                    <!--                    <input id="msgCode" name="msgCode" id="msgCode" type="text" style="" placeholder="请输入验证码">-->
+                </td>
+                <td width="50%" style="margin-top:10px;">
+                    <a href="#" id="getCode">
+                        <img src="./public/index_09.png" style="width:80%;height:60%;float:right;margin-right: 8%;" id="yzmsub">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" width="100%" class="td_jianju">
+                    <div class="w_kuang">
+                        <span id="pass_sty"></span>
+                        <input id="password" name="password" type="password" style="" placeholder="请输入登录密码">
+                    </div>
+                    <!--                    <input class="pass_sty" id="password" name="password" type="password" style=""-->
+                    <!--                           placeholder="请输入登录密码">-->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="95%" class="td_jianju" style="color:#a0a0a0;font-size:14px;text-align:center;">
+                    注册即代表我已阅读并同意<a href="https://www.xiongmaojinfu.com/content/html/2016/public_0905/162.html"><span style="color:#31b36a;">《服务协议》</span></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" width="100%" class="td_jianju" style="text-align:center;">
+                    <input type="image" src="./public/index_14.png" border="0" style="width:95%;height:60%;margin:0 auto;" id="checkForm">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="100%" class="td_jianju" style="text-align:center;">
+                    <a href="https://www.xiongmaojinfu.com/content/html/2016/public_0911/230.html"><input type="image" src="./public/reg_but.png" border="0" style="width:95%;height:60%;margin:0 auto;"></a>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div>
+        <img src="./public/10.png">
+    </div>
+</div>
+<div id="lashow"></div>
+<div id="loshow"></div> 
+
+<script type="text/javascript" src="./public/reg.js"></script>
+<script>
+    /**
+     * Created by gengzhiguo on 16/1/9.
+     */
+    var phone = $("#phone").val();
+    var share = function () {
+        var share_title = '熊猫金服';
+        var share_content = '熊猫金服';
+        var share_image = 'http://pic.baike.soso.com/p/20090711/20090711101754-314944703.jpg';
+        var share_url = 'https://www.xiongmaojinfu.com/auth/h5Regist?mobile=' + phone;
+
+        var obj = {};
+
+        obj.title = share_title;
+        obj.content = share_content;
+        obj.image = share_image;
+        obj.url = share_url;
+
+        return JSON.stringify(obj);
+    };
+
+
+    // 注册监听  --
+    function connectWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) {
+            callback(WebViewJavascriptBridge)
+        } else {
+            document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function () {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+            );
+        }
+    }
+    // 注册方法好让java调用
+    connectWebViewJavascriptBridge(function (bridge) {
+        // 初始化
+        bridge.init(function (message, responseCallback) {
+            console.log('JS got a message', message);
+
+        });
+
+        bridge.registerHandler("shareFunc", function (data, responseCallback) {
+
+            var responseData = share();
+            responseCallback(responseData);
+        });
+    });
+
+
+    var getUserInfo = function () {
+        // 调用java的方法
+        window.WebViewJavascriptBridge.callHandler(
+                'getUserInfo',
+                '',
+                function (responseData) {
+                    if (responseData !== '') {
+                        document.getElementById('test').innerHTML = responseData;
+                        return JSON.parse(responseData);
+                    }
+
+                    return '';
+                }
+        );
+    };
+
+    var getTenderInfo = function () {
+        // 调用java的方法
+        window.WebViewJavascriptBridge.callHandler(
+                'getTenderInfo',
+                '',
+                function (responseData) {
+                    if (responseData !== '') {
+                        return JSON.parse(responseData);
+                    }
+
+                    return '';
+                }
+        );
+    };
+
+
+    var goHistory = function () {
+        // 调用java的方法
+        window.WebViewJavascriptBridge.callHandler(
+                'goHistory',
+                '',
+                function (responseData) {
+                    // todo
+                }
+        );
+    };
+</script><!---->
+</body></html>
